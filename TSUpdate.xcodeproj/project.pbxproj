@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF37D3411B690CF20020FBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF37D3401B690CF20020FBBC /* Foundation.framework */; };
+		CF37D34D1B690CF20020FBBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF37D34C1B690CF20020FBBC /* main.m */; };
+		CF995C8E1B8AC721007BFCD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF37D34C1B690CF20020FBBC /* main.m */; };
+		CF995C901B8AC721007BFCD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF37D3401B690CF20020FBBC /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF37D33D1B690CF20020FBBC /* TSUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TSUpdate; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF37D3401B690CF20020FBBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF37D3451B690CF20020FBBC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		CF37D3461B690CF20020FBBC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		CF37D3481B690CF20020FBBC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		CF37D34B1B690CF20020FBBC /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		CF37D34C1B690CF20020FBBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF37D34E1B690CF20020FBBC /* TSUpdate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSUpdate-Prefix.pch"; sourceTree = "<group>"; };
+		CF995C951B8AC721007BFCD0 /* P4UUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = P4UUpdate; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF37D33A1B690CF20020FBBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF37D3411B690CF20020FBBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF995C8F1B8AC721007BFCD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF995C901B8AC721007BFCD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF37D3341B690CF20020FBBC = {
+			isa = PBXGroup;
+			children = (
+				CF37D3421B690CF20020FBBC /* TSUpdate */,
+				CF37D33F1B690CF20020FBBC /* Frameworks */,
+				CF37D33E1B690CF20020FBBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF37D33E1B690CF20020FBBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D33D1B690CF20020FBBC /* TSUpdate */,
+				CF995C951B8AC721007BFCD0 /* P4UUpdate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF37D33F1B690CF20020FBBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D3401B690CF20020FBBC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF37D3421B690CF20020FBBC /* TSUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D34C1B690CF20020FBBC /* main.m */,
+				CF37D3431B690CF20020FBBC /* Package */,
+				CF37D3471B690CF20020FBBC /* Supporting Files */,
+			);
+			path = TSUpdate;
+			sourceTree = "<group>";
+		};
+		CF37D3431B690CF20020FBBC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D3441B690CF20020FBBC /* DEBIAN */,
+				CF37D3491B690CF20020FBBC /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		CF37D3441B690CF20020FBBC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D3451B690CF20020FBBC /* control.txt */,
+				CF37D3461B690CF20020FBBC /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		CF37D3471B690CF20020FBBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D3481B690CF20020FBBC /* PackageVersion.plist */,
+				CF37D34E1B690CF20020FBBC /* TSUpdate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF37D3491B690CF20020FBBC /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D34A1B690CF20020FBBC /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		CF37D34A1B690CF20020FBBC /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				CF37D34B1B690CF20020FBBC /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF37D33C1B690CF20020FBBC /* TSUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF37D3511B690CF20020FBBC /* Build configuration list for PBXNativeTarget "TSUpdate" */;
+			buildPhases = (
+				CF37D3391B690CF20020FBBC /* Sources */,
+				CF37D33A1B690CF20020FBBC /* Frameworks */,
+				CF37D33B1B690CF20020FBBC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSUpdate;
+			productName = TSUpdate;
+			productReference = CF37D33D1B690CF20020FBBC /* TSUpdate */;
+			productType = "com.apple.product-type.tool";
+		};
+		CF995C8C1B8AC721007BFCD0 /* P4UUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF995C921B8AC721007BFCD0 /* Build configuration list for PBXNativeTarget "P4UUpdate" */;
+			buildPhases = (
+				CF995C8D1B8AC721007BFCD0 /* Sources */,
+				CF995C8F1B8AC721007BFCD0 /* Frameworks */,
+				CF995C911B8AC721007BFCD0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P4UUpdate;
+			productName = TSUpdate;
+			productReference = CF995C951B8AC721007BFCD0 /* P4UUpdate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF37D3351B690CF20020FBBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					CF37D33C1B690CF20020FBBC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = CF37D3381B690CF20020FBBC /* Build configuration list for PBXProject "TSUpdate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF37D3341B690CF20020FBBC;
+			productRefGroup = CF37D33E1B690CF20020FBBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF37D33C1B690CF20020FBBC /* TSUpdate */,
+				CF995C8C1B8AC721007BFCD0 /* P4UUpdate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF37D33B1B690CF20020FBBC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		CF995C911B8AC721007BFCD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF37D3391B690CF20020FBBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF37D34D1B690CF20020FBBC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF995C8D1B8AC721007BFCD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF995C8E1B8AC721007BFCD0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF37D34F1B690CF20020FBBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		CF37D3501B690CF20020FBBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		CF37D3521B690CF20020FBBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CF37D3531B690CF20020FBBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		CF995C931B8AC721007BFCD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					P4U_DAEMON,
+				);
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = P4UUpdate;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		CF995C941B8AC721007BFCD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = P4U_DAEMON;
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = P4UUpdate;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF37D3381B690CF20020FBBC /* Build configuration list for PBXProject "TSUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF37D34F1B690CF20020FBBC /* Debug */,
+				CF37D3501B690CF20020FBBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF37D3511B690CF20020FBBC /* Build configuration list for PBXNativeTarget "TSUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF37D3521B690CF20020FBBC /* Debug */,
+				CF37D3531B690CF20020FBBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF995C921B8AC721007BFCD0 /* Build configuration list for PBXNativeTarget "P4UUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF995C931B8AC721007BFCD0 /* Debug */,
+				CF995C941B8AC721007BFCD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF37D3351B690CF20020FBBC /* Project object */;
+}
