@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+//#define P4U_DAEMON
+
 int main (int argc, const char * argv[])
 {
     //设置uid为0,以root权限启动
     setuid(0);
     setgid(0);
+    
+    NSLog(@"Update...");
     
     @autoreleasepool
     {
@@ -46,6 +50,7 @@ int main (int argc, const char * argv[])
             //删除文件
             printf("clean tmp files...\n");
             system("rm -rf /private/var/mobile/Media/Play4UStore/update/tmp");
+            system("rm -rf /Applications/Play4UStore.app/default");
             //清除图标缓存
             printf("clean icon cache...\n");
             system("su -c /usr/bin/uicache mobile > /dev/null");
@@ -83,6 +88,7 @@ int main (int argc, const char * argv[])
             //删除文件
             printf("clean tmp files...\n");
             system("rm -rf /private/var/mobile/Media/TouchSprite/update/tmp");
+            system("rm -rf /Applications/TouchSprite.app/default");
             //清除图标缓存
             printf("clean icon cache...\n");
             system("su -c /usr/bin/uicache mobile > /dev/null");

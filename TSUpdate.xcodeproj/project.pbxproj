@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF37D33D1B690CF20020FBBC /* TSUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TSUpdate; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF37D33D1B690CF20020FBBC /* TSUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = TSUpdate; path = TSUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF37D3401B690CF20020FBBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF37D3451B690CF20020FBBC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		CF37D3461B690CF20020FBBC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
@@ -22,7 +22,7 @@
 		CF37D34B1B690CF20020FBBC /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
 		CF37D34C1B690CF20020FBBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF37D34E1B690CF20020FBBC /* TSUpdate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSUpdate-Prefix.pch"; sourceTree = "<group>"; };
-		CF995C951B8AC721007BFCD0 /* P4UUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = P4UUpdate; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF995C951B8AC721007BFCD0 /* P4UUpdate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = P4UUpdate; path = P4UUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 			name = TSUpdate;
 			productName = TSUpdate;
 			productReference = CF37D33D1B690CF20020FBBC /* TSUpdate */;
-			productType = "com.apple.product-type.tool";
+			productType = "com.apple.product-type.application";
 		};
 		CF995C8C1B8AC721007BFCD0 /* P4UUpdate */ = {
 			isa = PBXNativeTarget;
@@ -159,7 +159,7 @@
 			name = P4UUpdate;
 			productName = TSUpdate;
 			productReference = CF995C951B8AC721007BFCD0 /* P4UUpdate */;
-			productType = "com.apple.product-type.tool";
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -297,7 +297,9 @@
 		CF37D3521B690CF20020FBBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
 				INSTALL_PATH = /usr/bin;
@@ -315,7 +317,9 @@
 		CF37D3531B690CF20020FBBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TSUpdate/TSUpdate-Prefix.pch";
 				INSTALL_PATH = /usr/bin;
